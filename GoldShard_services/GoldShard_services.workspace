@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="GoldShard">
+		<Project filename="libfinance/libfinance.cbp" />
+		<Project filename="service_accounting/service_accounting.cbp" />
+		<Project filename="test_lib/test_lib.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

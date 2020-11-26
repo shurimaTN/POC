@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FpML xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0"
+      version="4-6"
+      service="SFIM_FixedIncomeService"
+      serviceVersion="2.2.56.fix"
+      type="RT">
+  <trade>
+      <tradeHeader>
+         <partyTradeIdentifier xmlns="http://www.fpml.org/2009/FpML-4-6" id="Trd_CT_Company_14766877">
+            <partyReference href="CT_CE90_14766877"/>
+            <versionedTradeId>
+               <tradeId tradeIdScheme="OTR" id="TRD_14766877">14766877</tradeId>
+               <version>0</version>
+            </versionedTradeId>
+            <linkId linkIdScheme="JSI">CASW_20200316_58_25_12_M</linkId>
+            <linkId linkIdScheme="FixedRateDecompounding_Rec">Simple</linkId>
+            <linkId linkIdScheme="Event_Id">78458631</linkId>
+            <linkId linkIdScheme="Trade_Version">0</linkId>
+            <linkId linkIdScheme="Version">20200316135531615</linkId>
+            <linkId linkIdScheme="Ext_CommonRef">12271667</linkId>
+            <linkId linkIdScheme="Booking_System">JSI</linkId>
+            <linkId linkIdScheme="Booking_System_Id">CASW_20200316_58_25_12_M</linkId>
+            <linkId linkIdScheme="UniqueKey">OT_TRADE_14766877_0</linkId>
+            <linkId linkIdScheme="NotionalScheduleType">Constant</linkId>
+         </partyTradeIdentifier>
+         <partyTradeIdentifier xmlns="http://www.fpml.org/2009/FpML-4-6" id="Trd_CT_Cust_14766877">
+            <partyReference href="CT_BZ_14766877"/>
+            <tradeId tradeIdScheme="CounterpartyReference" id="TRD_CUST_14766877">Unknown</tradeId>
+         </partyTradeIdentifier>
+         <partyTradeInformation xmlns="http://www.fpml.org/2009/FpML-4-6">
+            <partyReference href="CT_CE90_14766877"/>
+            <executionDateTime>2020-03-16T13:55:30+01:00</executionDateTime>
+            <clearingEligibility eligibilityScheme="ClearingHouse">N</clearingEligibility>
+            <clearingEligibility eligibilityScheme="Parties">N</clearingEligibility>
+            <clearingEligibility eligibilityScheme="MarkitWire">N</clearingEligibility>
+            <clearingEligibility eligibilityScheme="PrivateRules">N</clearingEligibility>
+            <clearingEligibility eligibilityScheme="ClearingMandatory">N</clearingEligibility>
+            <executionType executionTypeScheme="http://www.fpml.org/coding-scheme/execution-type">JSI</executionType>
+            <giveUpTrade>false</giveUpTrade>
+         </partyTradeInformation>
+         <partyTradeInformation xmlns="http://www.fpml.org/2009/FpML-4-6">
+            <partyReference href="CT_BZ_14766877"/>
+         </partyTradeInformation>
+         <tradeDate xmlns="http://www.fpml.org/2009/FpML-4-6">2020-03-16</tradeDate>
+         <tradeEventTypology>
+            <eventCategory>Financial</eventCategory>
+            <eventFamily>TradeNegotiatedEvent</eventFamily>
+            <eventType>InitialNegotiation</eventType>
+            <agreementDate>2020-03-16</agreementDate>
+            <executionDateTime>2020-03-16T13:55:30+01:00</executionDateTime>
+         </tradeEventTypology>
+         <tradeCondition>
+            <APartyReference href="CT_CE90_14766877"/>
+            <BPartyReference href="CT_BZ_14766877"/>
+            <exchangedProduct1>
+               <productReference href="PDT_14766877"/>
+               <productId idScheme="PUID">519</productId>
+               <quantity>19600000</quantity>
+               <valueDate>2020-03-18</valueDate>
+               <productType productTypeScheme="CibML_Envelope">swap</productType>
+               <quantityType>NOMINAL</quantityType>
+               <priceType>PERCENT</priceType>
+            </exchangedProduct1>
+            <exchangedProduct2>
+               <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+               <quantity>93151.34224966</quantity>
+               <valueDate>2020-03-18</valueDate>
+            </exchangedProduct2>
+            <ATradeDirection>Buy</ATradeDirection>
+         </tradeCondition>
+         <tradeProcessingInfo>
+            <processingStatus>
+               <processingStatusCode codingScheme="TradeStatus_OT">Validated</processingStatusCode>
+               <userId idScheme="utUser">SRV_OTR_PRD</userId>
+            </processingStatus>
+         </tradeProcessingInfo>
+         <margin>
+            <dealQuality>NONE</dealQuality>
+         </margin>
+         <tradePartyInfo>
+            <partyReference href="CT_CE90_14766877"/>
+            <partyTradeProcessIndicator>true</partyTradeProcessIndicator>
+            <partyRole>Principal</partyRole>
+            <masterAgreement>
+               <masterAgreementType xmlns="http://www.fpml.org/2009/FpML-4-6"
+                                    masterAgreementTypeScheme="http://www.fpml.org/coding-scheme/master-agreement-type">AFB</masterAgreementType>
+            </masterAgreement>
+         </tradePartyInfo>
+         <tradePartyInfo>
+            <partyReference href="CT_BZ_14766877"/>
+            <partyTradeProcessIndicator>false</partyTradeProcessIndicator>
+            <partyRole>Counterparty</partyRole>
+         </tradePartyInfo>
+         <otherTradeInfo>
+            <inputInfo>
+               <sourceApplicationId idScheme="application">OtFo</sourceApplicationId>
+               <inputUserIdentifier idScheme="utUser">SRV_OTR_PRD</inputUserIdentifier>
+               <inputTimeStamp>2020-03-16T13:55:30+01:00</inputTimeStamp>
+               <inputType>Creation</inputType>
+            </inputInfo>
+         </otherTradeInfo>
+         <asOfDate>2020-03-16</asOfDate>
+         <originatingPackage>
+            <size>2</size>
+            <sequenceNumber>1</sequenceNumber>
+         </originatingPackage>
+      </tradeHeader>
+      <swap xmlns="http://www.fpml.org/2009/FpML-4-6" id="PDT_14766877">
+         <productType productTypeScheme="http://www.fpml.org/coding-scheme/product-type-simple">SWAP</productType>
+         <productType productTypeScheme="SpecificFamilyCode">IRS</productType>
+         <productType productTypeScheme="unique-product-identifier">Single Currency Interest RateSwap</productType>
+         <productType productTypeScheme="SpecificTypeCode">IRS</productType>
+         <productType productTypeScheme="BaseProductType">InterestRate</productType>
+         <productType productTypeScheme="SubProductType">InterestRate</productType>
+         <productType productTypeScheme="ExoticType">NO</productType>
+         <productType productTypeScheme="Keyword">SSTD</productType>
+         <productType productTypeScheme="CommercialName">Swap</productType>
+         <productType productTypeScheme="RiskPayOff">Swap</productType>
+         <productType productTypeScheme="CouponPayOff">Standard</productType>
+         <productType productTypeScheme="Index1Obs">Fixed</productType>
+         <productType productTypeScheme="Index1Pay">Fixed</productType>
+         <productType productTypeScheme="Index2Obs">XIbor</productType>
+         <productType productTypeScheme="Index2Pay">XIbor</productType>
+         <productType productTypeScheme="Currency">MonoCcy</productType>
+         <productId productIdScheme="ISDA">InterestRate:IRSwap:FixedFloat</productId>
+         <productId>SWAP_14766877</productId>
+         <productId productIdScheme="PUID">519</productId>
+         <swapStream id="Pay_14766877">
+            <payerPartyReference href="CT_CE90_14766877"/>
+            <receiverPartyReference href="CT_BZ_14766877"/>
+            <calculationPeriodDates id="floatCalcPeriodDates_Pay">
+               <effectiveDate>
+                  <unadjustedDate>2020-03-18</unadjustedDate>
+                  <dateAdjustments>
+                     <businessDayConvention>NONE</businessDayConvention>
+                     <businessCenters>
+                        <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                     </businessCenters>
+                  </dateAdjustments>
+               </effectiveDate>
+               <terminationDate>
+                  <unadjustedDate>2024-03-18</unadjustedDate>
+                  <dateAdjustments id="primary">
+                     <businessDayConvention>MODFOLLOWING</businessDayConvention>
+                     <businessCenters>
+                        <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                     </businessCenters>
+                  </dateAdjustments>
+               </terminationDate>
+               <calculationPeriodDatesAdjustments>
+                  <businessDayConvention>MODFOLLOWING</businessDayConvention>
+                  <businessCenters>
+                     <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                  </businessCenters>
+               </calculationPeriodDatesAdjustments>
+               <calculationPeriodFrequency>
+                  <periodMultiplier>6</periodMultiplier>
+                  <period>M</period>
+                  <rollConvention>18</rollConvention>
+               </calculationPeriodFrequency>
+            </calculationPeriodDates>
+            <paymentDates id="PaymentPeriodDate_Pay_14766877">
+               <calculationPeriodDatesReference href="floatCalcPeriodDates_Pay"/>
+               <paymentFrequency>
+                  <periodMultiplier>6</periodMultiplier>
+                  <period>M</period>
+               </paymentFrequency>
+               <payRelativeTo>CalculationPeriodEndDate</payRelativeTo>
+               <paymentDatesAdjustments>
+                  <businessDayConvention>MODFOLLOWING</businessDayConvention>
+                  <businessCenters>
+                     <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                  </businessCenters>
+               </paymentDatesAdjustments>
+            </paymentDates>
+            <resetDates id="resetDatesPay">
+               <calculationPeriodDatesReference href="floatCalcPeriodDates_Pay"/>
+               <resetRelativeTo>CalculationPeriodStartDate</resetRelativeTo>
+               <fixingDates>
+                  <periodMultiplier>-2</periodMultiplier>
+                  <period>D</period>
+                  <dayType>Business</dayType>
+                  <businessDayConvention>PRECEDING</businessDayConvention>
+                  <businessCenters>
+                     <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                  </businessCenters>
+                  <dateRelativeTo href="resetDatesPay"/>
+               </fixingDates>
+               <resetFrequency>
+                  <periodMultiplier>6</periodMultiplier>
+                  <period>M</period>
+               </resetFrequency>
+               <resetDatesAdjustments>
+                  <businessDayConvention>MODFOLLOWING</businessDayConvention>
+                  <businessCenters>
+                     <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                  </businessCenters>
+               </resetDatesAdjustments>
+            </resetDates>
+            <calculationPeriodAmount>
+               <calculation>
+                  <notionalSchedule id="notionalSchedulePay">
+                     <notionalStepSchedule>
+                        <initialValue>1111</initialValue>
+                        <step>
+                           <stepDate>2020-03-18</stepDate>
+                           <stepValue>1010</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2020-09-18</stepDate>
+                           <stepValue>99</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2021-03-18</stepDate>
+                           <stepValue>88</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2021-09-20</stepDate>
+                           <stepValue>77</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2022-03-18</stepDate>
+                           <stepValue>66</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2022-09-19</stepDate>
+                           <stepValue>55</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2023-03-20</stepDate>
+                           <stepValue>44</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2023-09-18</stepDate>
+                           <stepValue>33</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2024-03-18</stepDate>
+                           <stepValue>22</stepValue>
+                        </step>
+                          <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                     </notionalStepSchedule>
+                  </notionalSchedule>
+                  <floatingRateCalculation id="PAY_EURIBOR6M">
+                     <floatingRateIndex floatingRateIndexScheme="http://www.fpml.org/coding-scheme/floating-rate-index">EUR-EURIBOR-Reuters</floatingRateIndex>
+                     <indexTenor>
+                        <periodMultiplier>6</periodMultiplier>
+                        <period>M</period>
+                     </indexTenor>
+                     <spreadSchedule>
+                        <initialValue>0</initialValue>
+                     </spreadSchedule>
+                     <payoutSpreadSchedule>
+                        <initialValue>0</initialValue>
+                     </payoutSpreadSchedule>
+                  </floatingRateCalculation>
+                  <dayCountFraction dayCountFractionScheme="http://www.fpml.org/coding-scheme/day-count-fraction">ACT/360</dayCountFraction>
+                  <accrualDayCountFraction dayCountFractionScheme="http://www.fpml.org/coding-scheme/day-count-fraction">ACT/360</accrualDayCountFraction>
+               </calculation>
+            </calculationPeriodAmount>
+            <principalExchanges id="PrincipalExchanges_Pay_14766877">
+               <initialExchange>false</initialExchange>
+               <finalExchange>false</finalExchange>
+               <intermediateExchange>false</intermediateExchange>
+            </principalExchanges>
+            <cashflows>
+               <cashflowsMatchParameters>true</cashflowsMatchParameters>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2020-09-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2020-03-18</adjustedStartDate>
+                     <adjustedEndDate>2020-09-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>184</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>0</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2020-03-16</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">184</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>0</amount>
+                     </forecastAmount>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2021-03-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2020-09-18</adjustedStartDate>
+                     <adjustedEndDate>2021-03-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>181</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>-0.00411022</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2020-09-16</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">181</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>-40503.88783250</amount>
+                     </forecastAmount>
+                     <forecastRate>-0.00411022</forecastRate>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2021-09-20</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2021-03-18</adjustedStartDate>
+                     <adjustedEndDate>2021-09-20</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>186</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>-0.00413593</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2021-03-16</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">186</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>-41883.14911366</amount>
+                     </forecastAmount>
+                     <forecastRate>-0.00413593</forecastRate>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2022-03-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2021-09-20</adjustedStartDate>
+                     <adjustedEndDate>2022-03-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>179</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>-0.00381856</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2021-09-16</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">179</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>-37213.99866517</amount>
+                     </forecastAmount>
+                     <forecastRate>-0.00381856</forecastRate>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2022-09-19</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2022-03-18</adjustedStartDate>
+                     <adjustedEndDate>2022-09-19</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>185</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>-0.00339411</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2022-03-16</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">185</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>-34186.27744631</amount>
+                     </forecastAmount>
+                     <forecastRate>-0.00339411</forecastRate>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2023-03-20</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2022-09-19</adjustedStartDate>
+                     <adjustedEndDate>2023-03-20</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>182</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>-0.00314533</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2022-09-15</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">182</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>-31166.76527911</amount>
+                     </forecastAmount>
+                     <forecastRate>-0.00314533</forecastRate>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2023-09-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2023-03-20</adjustedStartDate>
+                     <adjustedEndDate>2023-09-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>182</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>-0.00245292</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2023-03-16</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">182</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>-24305.69088410</amount>
+                     </forecastAmount>
+                     <forecastRate>-0.00245292</forecastRate>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2024-03-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_PAY"/>
+                     <adjustedStartDate>2023-09-18</adjustedStartDate>
+                     <adjustedEndDate>2024-03-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>182</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <floatingRateDefinition xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0">
+                        <forwardCurveReference href="FWD_PAY_EURIBOR6M"/>
+                        <calculatedRate>-0.00207648</calculatedRate>
+                        <rateObservation>
+                           <adjustedFixingDate xmlns="http://www.fpml.org/2009/FpML-4-6">2023-09-14</adjustedFixingDate>
+                           <observedRate xmlns="http://www.fpml.org/2009/FpML-4-6">0</observedRate>
+                           <observationWeight xmlns="http://www.fpml.org/2009/FpML-4-6">182</observationWeight>
+                        </rateObservation>
+                        <floatingRateMultiplier>1</floatingRateMultiplier>
+                        <rateCalculation>PAY_EURIBOR6M</rateCalculation>
+                        <payoutSpread>0</payoutSpread>
+                     </floatingRateDefinition>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>-20575.61638650</amount>
+                     </forecastAmount>
+                     <forecastRate>-0.00207648</forecastRate>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+            </cashflows>
+            <adjusted>true</adjusted>
+            <adjustedDetail>StartUnadjusted</adjustedDetail>
+         </swapStream>
+         <swapStream id="Rec_14766877">
+            <payerPartyReference href="CT_BZ_14766877"/>
+            <receiverPartyReference href="CT_CE90_14766877"/>
+            <calculationPeriodDates id="fixedCalcPeriodDates_Receive">
+               <effectiveDate>
+                  <unadjustedDate>2020-03-18</unadjustedDate>
+                  <dateAdjustments>
+                     <businessDayConvention>NONE</businessDayConvention>
+                     <businessCenters>
+                        <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                     </businessCenters>
+                  </dateAdjustments>
+               </effectiveDate>
+               <terminationDate>
+                  <unadjustedDate>2024-03-18</unadjustedDate>
+                  <dateAdjustments id="primary2">
+                     <businessDayConvention>MODFOLLOWING</businessDayConvention>
+                     <businessCenters>
+                        <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                     </businessCenters>
+                  </dateAdjustments>
+               </terminationDate>
+               <calculationPeriodDatesAdjustments>
+                  <businessDayConvention>MODFOLLOWING</businessDayConvention>
+                  <businessCenters>
+                     <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                  </businessCenters>
+               </calculationPeriodDatesAdjustments>
+               <calculationPeriodFrequency>
+                  <periodMultiplier>1</periodMultiplier>
+                  <period>Y</period>
+                  <rollConvention>18</rollConvention>
+               </calculationPeriodFrequency>
+            </calculationPeriodDates>
+            <paymentDates id="PaymentPeriodDate_Receive_14766877">
+               <calculationPeriodDatesReference href="fixedCalcPeriodDates_Receive"/>
+               <paymentFrequency>
+                  <periodMultiplier>1</periodMultiplier>
+                  <period>Y</period>
+               </paymentFrequency>
+               <payRelativeTo>CalculationPeriodEndDate</payRelativeTo>
+               <paymentDatesAdjustments>
+                  <businessDayConvention>MODFOLLOWING</businessDayConvention>
+                  <businessCenters>
+                     <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">EUTA</businessCenter>
+                  </businessCenters>
+               </paymentDatesAdjustments>
+            </paymentDates>
+            <calculationPeriodAmount>
+               <calculation>
+                  <notionalSchedule id="notionalScheduleReceive">
+                     <notionalStepSchedule>
+                        <initialValue>66</initialValue>
+                        <step>
+                           <stepDate>2020-03-18</stepDate>
+                           <stepValue>55</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2021-03-18</stepDate>
+                           <stepValue>44</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2022-03-18</stepDate>
+                           <stepValue>33</stepValue>
+                        </step>
+                        <step>
+                           <stepDate>2023-03-20</stepDate>
+                           <stepValue>22</stepValue>
+                        </step>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+                     </notionalStepSchedule>
+                  </notionalSchedule>
+                  <fixedRateSchedule>
+                     <initialValue>0.000126</initialValue>
+                  </fixedRateSchedule>
+                  <dayCountFraction dayCountFractionScheme="http://www.fpml.org/coding-scheme/day-count-fraction">30/360</dayCountFraction>
+                  <accrualDayCountFraction dayCountFractionScheme="http://www.fpml.org/coding-scheme/day-count-fraction">30/360</accrualDayCountFraction>
+               </calculation>
+            </calculationPeriodAmount>
+            <principalExchanges id="PrincipalExchanges_Receive_14766877">
+               <initialExchange>false</initialExchange>
+               <finalExchange>false</finalExchange>
+               <intermediateExchange>false</intermediateExchange>
+            </principalExchanges>
+            <cashflows>
+               <cashflowsMatchParameters>true</cashflowsMatchParameters>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2021-03-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_REC"/>
+                     <adjustedStartDate>2020-03-18</adjustedStartDate>
+                     <adjustedEndDate>2021-03-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>360</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <fixedRate>0.000126</fixedRate>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>2469.6</amount>
+                     </forecastAmount>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2022-03-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_REC"/>
+                     <adjustedStartDate>2021-03-18</adjustedStartDate>
+                     <adjustedEndDate>2022-03-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>360</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <fixedRate>0.000126</fixedRate>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>2469.6</amount>
+                     </forecastAmount>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2023-03-20</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_REC"/>
+                     <adjustedStartDate>2022-03-18</adjustedStartDate>
+                     <adjustedEndDate>2023-03-20</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>362</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <fixedRate>0.000126</fixedRate>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>2483.32</amount>
+                     </forecastAmount>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+               <paymentCalculationPeriod>
+                  <adjustedPaymentDate>2024-03-18</adjustedPaymentDate>
+                  <calculationPeriod>
+                     <discountCurveReference href="DISC_REC"/>
+                     <adjustedStartDate>2023-03-20</adjustedStartDate>
+                     <adjustedEndDate>2024-03-18</adjustedEndDate>
+                     <calculationPeriodNumberOfDays>358</calculationPeriodNumberOfDays>
+                     <notionalAmount>19600000</notionalAmount>
+                     <fixedRate>0.000126</fixedRate>
+                     <forecastAmount>
+                        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</currency>
+                        <amount>2455.88</amount>
+                     </forecastAmount>
+                  </calculationPeriod>
+               </paymentCalculationPeriod>
+            </cashflows>
+            <adjusted>true</adjusted>
+            <adjustedDetail>StartUnadjusted</adjustedDetail>
+         </swapStream>
+      </swap>
+  </trade>
+  <valuationSet id="NPV">
+      <name xmlns="http://www.fpml.org/2009/FpML-4-6">RiskValuationEOD</name>
+      <assetValuation xmlns="http://www.fpml.org/2009/FpML-4-6">
+         <objectReference href="PDT_14766877"/>
+         <yieldCurveValuation id="DISC_PAY">
+            <discountFactorCurve>
+               <curveId curveScheme="CARD">EUR-EUR-EURIBOR-3M</curveId>
+               <curveCurrency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</curveCurrency>
+            </discountFactorCurve>
+         </yieldCurveValuation>
+         <yieldCurveValuation id="DISC_REC">
+            <discountFactorCurve>
+               <curveId curveScheme="CARD">EUR-EUR-EURIBOR-3M</curveId>
+               <curveCurrency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">EUR</curveCurrency>
+            </discountFactorCurve>
+         </yieldCurveValuation>
+         <yieldCurveValuation id="FWD_PAY_EURIBOR6M">
+            <forwardCurve>
+               <curveId curveScheme="ISDA">EUR-EURIBOR-6M</curveId>
+            </forwardCurve>
+         </yieldCurveValuation>
+         <yieldCurveValuation id="FWD_REC">
+            <forwardCurve>
+               <curveId curveScheme="ISDA">FIXED</curveId>
+            </forwardCurve>
+         </yieldCurveValuation>
+      </assetValuation>
+  </valuationSet>
+  <party id="CT_CE90_14766877">
+      <partyId idScheme="RICOS_SC">SC0000000001</partyId>
+      <partyId idScheme="RICOS">0000002071</partyId>
+      <partyId idScheme="RTS">0000000001</partyId>
+      <partyId idScheme="LEI">1VUV7VQFKUOQSJ21A208</partyId>
+      <partyId idScheme="COUNTRY_ISO">FRA</partyId>
+      <partyShortName>CCIBP</partyShortName>
+      <partyName>CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK</partyName>
+      <analyticalStructureInfo>
+         <legalEntityNature>INTERNAL</legalEntityNature>
+         <organizationalBusinessUnitCode>0010</organizationalBusinessUnitCode>
+         <cdrId>70655</cdrId>
+         <frontOfficePortfolioCode>CE90</frontOfficePortfolioCode>
+         <backOfficePortfolioCode codingScheme="newEdge">M172</backOfficePortfolioCode>
+         <bookType>OT_FO_OWNER</bookType>
+      </analyticalStructureInfo>
+  </party>
+  <party id="CT_BZ_14766877">
+      <partyId idScheme="RICOS_SC">SC0000000001</partyId>
+      <partyId idScheme="RICOS">0000002071</partyId>
+      <partyId idScheme="INTERNAL">BZ</partyId>
+      <partyId idScheme="RTS">0000000001</partyId>
+      <partyId idScheme="LEI">1VUV7VQFKUOQSJ21A208</partyId>
+      <partyId idScheme="COUNTRY_ISO">FRA</partyId>
+      <partyShortName>BZ</partyShortName>
+      <partyName>BZ</partyName>
+      <analyticalStructureInfo>
+         <legalEntityNature>INTERNAL</legalEntityNature>
+         <organizationalBusinessUnitCode>0010</organizationalBusinessUnitCode>
+         <cdrId>70633</cdrId>
+         <frontOfficePortfolioCode>BZ</frontOfficePortfolioCode>
+         <backOfficePortfolioCode codingScheme="newEdge">M180</backOfficePortfolioCode>
+         <bookType>OT_FO_OWNER</bookType>
+      </analyticalStructureInfo>
+  </party>
+  <requestForQuote>
+      <quoteOrderInformation>
+         <quoteOrderNature>
+            <quoteType>Firm</quoteType>
+         </quoteOrderNature>
+      </quoteOrderInformation>
+      <masterChecks>
+         <tradeChecks>
+            <collateralTransfer>false</collateralTransfer>
+         </tradeChecks>
+         <clientChecks>
+            <clientActingAsDistributorToRetail>false</clientActingAsDistributorToRetail>
+            <clientOffersProductToItsClients>false</clientOffersProductToItsClients>
+         </clientChecks>
+      </masterChecks>
+  </requestForQuote>
+</FpML>

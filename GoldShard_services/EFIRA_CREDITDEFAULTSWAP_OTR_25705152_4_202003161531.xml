@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FpML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:cacibml:SFIM_FixedIncome_v1-1-0" version="4-6" actualBuild="5" service="SFIM_FixedIncomeService" serviceVersion="2.2.56.fix" type="RT">
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier xmlns="http://www.fpml.org/2009/FpML-4-6" id="Trd_CT_Company_7023294">
+        <partyReference href="CT_HYB_HK_7023294"/>
+        <versionedTradeId>
+          <tradeId tradeIdScheme="OTR" id="TRD_7023294">25705152</tradeId>
+          <version>4</version>
+        </versionedTradeId>
+        <linkId linkIdScheme="Full_Period">Y</linkId>
+        <linkId linkIdScheme="Event_Id">78448304</linkId>
+        <linkId linkIdScheme="Trade_Version">4</linkId>
+        <linkId linkIdScheme="Version">20200316112705949</linkId>
+        <linkId linkIdScheme="External_Ref">hh02267xxxxC</linkId>
+        <linkId linkIdScheme="UniqueKey">OT_TRADE_7023294_4</linkId>
+        <linkId linkIdScheme="Booking_System">OTR</linkId>
+        <linkId linkIdScheme="Booking_System_Id">7023294</linkId>
+      </partyTradeIdentifier>
+      <partyTradeIdentifier xmlns="http://www.fpml.org/2009/FpML-4-6" id="Trd_CT_Cust_7023294">
+        <partyReference href="CT_GSICLD_7023294"/>
+        <tradeId tradeIdScheme="CounterpartyReference" id="TRD_CUST_7023294">Unknown</tradeId>
+      </partyTradeIdentifier>
+      <partyTradeInformation xmlns="http://www.fpml.org/2009/FpML-4-6">
+        <partyReference href="CT_HYB_HK_7023294"/>
+        <trader traderScheme="utUser">ut09ga</trader>
+        <trader traderScheme="nameUser">TAIEB,Jeremy Jacob</trader>
+        <executionDateTime>2017-10-28T10:42:42+02:00</executionDateTime>
+        <clearingEligibility eligibilityScheme="ClearingHouse">N</clearingEligibility>
+        <clearingEligibility eligibilityScheme="Parties">N</clearingEligibility>
+        <clearingEligibility eligibilityScheme="MarkitWire">N</clearingEligibility>
+        <clearingEligibility eligibilityScheme="PrivateRules">N</clearingEligibility>
+        <clearingEligibility eligibilityScheme="ClearingMandatory">N</clearingEligibility>
+        <giveUpTrade>false</giveUpTrade>
+      </partyTradeInformation>
+      <partyTradeInformation xmlns="http://www.fpml.org/2009/FpML-4-6">
+        <partyReference href="CT_GSICLD_7023294"/>
+      </partyTradeInformation>
+      <tradeDate xmlns="http://www.fpml.org/2009/FpML-4-6">2016-09-05</tradeDate>
+      <tradeEventTypology>
+        <eventCategory>Financial</eventCategory>
+        <eventFamily>PositionEvent</eventFamily>
+        <eventType>NominalNegotiationModification</eventType>
+        <eventSubType>PartialTermination</eventSubType>
+        <effectiveDate>2020-03-19</effectiveDate>
+        <agreementDate>2020-03-16</agreementDate>
+        <executionDateTime>2020-03-16T11:27:05.5753105+01:00</executionDateTime>
+        <changeInNotionalAmount>
+          <currency xmlns="http://www.fpml.org/2009/FpML-4-6" currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+          <amount xmlns="http://www.fpml.org/2009/FpML-4-6">10000000</amount>
+        </changeInNotionalAmount>
+      </tradeEventTypology>
+      <tradeCondition>
+        <APartyReference href="CT_HYB_HK_7023294"/>
+        <BPartyReference href="CT_GSICLD_7023294"/>
+        <exchangedProduct1>
+          <productReference href="PDT_7023294"/>
+          <productId idScheme="PUID">184</productId>
+          <quantity>16000000</quantity>
+          <valueDate>2016-09-08</valueDate>
+          <productType productTypeScheme="CibML_Envelope">creditDefaultSwap</productType>
+        </exchangedProduct1>
+        <exchangedProduct2>
+          <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+          <quantity>6000000</quantity>
+          <valueDate>2016-09-08</valueDate>
+        </exchangedProduct2>
+        <ATradeDirection>Sell</ATradeDirection>
+      </tradeCondition>
+      <tradeProcessingInfo>
+        <processingStatus>
+          <processingStatusCode codingScheme="TradeStatus_OT">Validated</processingStatusCode>
+          <userId idScheme="utUser">UT1JB0</userId>
+        </processingStatus>
+      </tradeProcessingInfo>
+      <margin>
+        <dealQuality>NONE</dealQuality>
+      </margin>
+      <tradePartyInfo>
+        <partyReference href="CT_HYB_HK_7023294"/>
+        <partyTradeProcessIndicator>true</partyTradeProcessIndicator>
+        <partyRole>Principal</partyRole>
+        <masterAgreement>
+          <masterAgreementType xmlns="http://www.fpml.org/2009/FpML-4-6" masterAgreementTypeScheme="http://www.fpml.org/coding-scheme/master-agreement-type">AFB</masterAgreementType>
+        </masterAgreement>
+      </tradePartyInfo>
+      <tradePartyInfo>
+        <partyReference href="CT_GSICLD_7023294"/>
+        <partyTradeProcessIndicator>false</partyTradeProcessIndicator>
+        <partyRole>Counterparty</partyRole>
+      </tradePartyInfo>
+      <otherTradeInfo>
+        <inputInfo>
+          <sourceApplicationId idScheme="application">OtFo</sourceApplicationId>
+          <inputUserIdentifier idScheme="utUser">UT1JB0</inputUserIdentifier>
+          <inputTimeStamp>2020-03-16T11:14:26+01:00</inputTimeStamp>
+          <inputType>Modification</inputType>
+        </inputInfo>
+      </otherTradeInfo>
+      <asOfDate>2020-03-16</asOfDate>
+    </tradeHeader>
+    <creditDefaultSwap xmlns="http://www.fpml.org/2009/FpML-4-6" id="PDT_7023294">
+      <productType productTypeScheme="http://www.fpml.org/coding-scheme/product-type-simple">CDS</productType>
+      <productType productTypeScheme="SpecificFamilyCode">CDS</productType>
+      <productType productTypeScheme="unique-product-identifier">CreditDefaultSwap</productType>
+      <productType productTypeScheme="SpecificTypeCode">CDS</productType>
+      <productType productTypeScheme="BaseProductType">CreditInterestRate</productType>
+      <productType productTypeScheme="SubProductType">CreditInterestRate</productType>
+      <productType productTypeScheme="ExoticType">NO</productType>
+      <productType productTypeScheme="Keyword">CDS</productType>
+      <productType productTypeScheme="CommercialName">CDS</productType>
+      <productType productTypeScheme="RiskPayOff">CDS</productType>
+      <productType productTypeScheme="CouponPayOff">Standard</productType>
+      <productType productTypeScheme="Index1Obs">None</productType>
+      <productType productTypeScheme="Index1Pay">None</productType>
+      <productType productTypeScheme="Index2Obs">None</productType>
+      <productType productTypeScheme="Index2Pay">None</productType>
+      <productType productTypeScheme="Currency">MonoCcy</productType>
+      <productId productIdScheme="PUID">184</productId>
+      <generalTerms>
+        <effectiveDate>
+          <unadjustedDate>2016-06-20</unadjustedDate>
+          <dateAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters id="BusinessCenters">
+              <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">GBLO</businessCenter>
+              <businessCenter businessCenterScheme="http://www.fpml.org/coding-scheme/business-center">USNY</businessCenter>
+            </businessCenters>
+          </dateAdjustments>
+        </effectiveDate>
+        <scheduledTerminationDate>
+          <unadjustedDate>2021-12-20</unadjustedDate>
+          <dateAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCentersReference href="BusinessCenters"/>
+          </dateAdjustments>
+        </scheduledTerminationDate>
+        <buyerPartyReference href="CT_GSICLD_7023294"/>
+        <sellerPartyReference href="CT_HYB_HK_7023294"/>
+        <referenceInformation>
+          <referenceEntity>
+            <entityName entityNameScheme="SIAM">BCNPK</entityName>
+            <entityId entityIdScheme="RICOS_SC">SC0000000872</entityId>
+          </referenceEntity>
+          <referenceObligation>
+            <bond>
+              <instrumentId instrumentIdScheme="ISIN">XS1016655349</instrumentId>
+              <seniorityUnderlying creditSeniorityScheme="http://www.fpml.org/coding-scheme/credit-seniority">SNRFOR</seniorityUnderlying>
+            </bond>
+          </referenceObligation>
+        </referenceInformation>
+        <additionalTerm>N</additionalTerm>
+      </generalTerms>
+      <feeLeg>
+        <periodicPayment>
+          <paymentFrequency>
+            <periodMultiplier>3</periodMultiplier>
+            <period>M</period>
+          </paymentFrequency>
+          <firstPaymentDate>2016-09-20</firstPaymentDate>
+          <rollConvention>20</rollConvention>
+          <fixedAmountCalculation>
+            <fixedRate>0.01</fixedRate>
+          </fixedAmountCalculation>
+        </periodicPayment>
+      </feeLeg>
+      <protectionTerms>
+        <calculationAmount>
+          <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+          <amount>16000000</amount>
+        </calculationAmount>
+        <creditEvents>
+          <restructuring>
+            <restructuringType restructuringScheme="http://www.fpml.org/coding-scheme/restructuring">CR14</restructuringType>
+          </restructuring>
+        </creditEvents>
+      </protectionTerms>
+      <additionalPayment href="DISC_PDT">
+        <payerPartyReference href="CT_GSICLD_7023294"/>
+        <receiverPartyReference href="CT_HYB_HK_7023294"/>
+        <paymentAmount>
+          <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+          <amount>202704</amount>
+        </paymentAmount>
+        <adjustedPaymentDate>2016-09-08</adjustedPaymentDate>
+        <paymentType>Upfront</paymentType>
+      </additionalPayment>
+      <additionalPayment href="DISC_PDT">
+        <payerPartyReference href="CT_GSICLD_7023294"/>
+        <receiverPartyReference href="CT_HYB_HK_7023294"/>
+        <paymentAmount>
+          <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+          <amount>78335</amount>
+        </paymentAmount>
+        <adjustedPaymentDate>2018-01-29</adjustedPaymentDate>
+        <paymentType>Upfront</paymentType>
+      </additionalPayment>
+      <additionalPayment href="DISC_PDT">
+        <payerPartyReference href="CT_GSICLD_7023294"/>
+        <receiverPartyReference href="CT_HYB_HK_7023294"/>
+        <paymentAmount>
+          <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+          <amount>130390</amount>
+        </paymentAmount>
+        <adjustedPaymentDate>2020-03-19</adjustedPaymentDate>
+        <paymentType>PartialTermination</paymentType>
+      </additionalPayment>
+    </creditDefaultSwap>
+    <documentation>
+      <masterAgreement xmlns="http://www.fpml.org/2009/FpML-4-6">
+        <masterAgreementType masterAgreementTypeScheme="CSA">GOLDMAN_INT_NEW</masterAgreementType>
+      </masterAgreement>
+    </documentation>
+  </trade>
+  <valuationSet id="NPV">
+    <name xmlns="http://www.fpml.org/2009/FpML-4-6">RiskValuationEOD</name>
+    <assetValuation xmlns="http://www.fpml.org/2009/FpML-4-6">
+      <objectReference href="PDT_7023294"/>
+      <yieldCurveValuation id="DISC_PDT">
+        <discountFactorCurve>
+          <curveId curveScheme="CARD">USD-USD-OIS-1D</curveId>
+          <curveCurrency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</curveCurrency>
+        </discountFactorCurve>
+      </yieldCurveValuation>
+      <yieldCurveValuation id="DISC_REC">
+        <forwardCurve>
+          <curveId curveScheme="ISDA">FIXED</curveId>
+        </forwardCurve>
+      </yieldCurveValuation>
+      <creditCurveValuation id="DRM_BANK_OF_CHINA">
+        <curveId>BCNPK USD3M</curveId>
+        <recoveryRate>0</recoveryRate>
+      </creditCurveValuation>
+    </assetValuation>
+  </valuationSet>
+  <valuationSet id="CurrentNotional">
+    <assetValuation xmlns="http://www.fpml.org/2009/FpML-4-6" id="CurrentNotionalReceiveLeg">
+      <objectReference href="PDT_7023294"/>
+      <quote>
+        <value>6000000</value>
+        <measureType assetMeasureScheme="http://www.fpml.org/coding-scheme/asset-measure">CurrentNotional</measureType>
+        <currency currencyScheme="http://www.fpml.org/ext/iso4217-2001-08-15">USD</currency>
+        <valuationDate>2020-03-16</valuationDate>
+      </quote>
+    </assetValuation>
+  </valuationSet>
+  <party id="CT_HYB_HK_7023294">
+    <partyId idScheme="RICOS_SC">SC0000000001</partyId>
+    <partyId idScheme="RICOS">0000002071</partyId>
+    <partyId idScheme="RTS">0000000001</partyId>
+    <partyId idScheme="LEI">1VUV7VQFKUOQSJ21A208</partyId>
+    <partyId idScheme="COUNTRY_ISO">FRA</partyId>
+    <partyShortName>CCIBP</partyShortName>
+    <partyName>CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK</partyName>
+    <analyticalStructureInfo>
+      <legalEntityNature>EXTERNAL</legalEntityNature>
+      <organizationalBusinessUnitCode>0010</organizationalBusinessUnitCode>
+      <cdrId>70588</cdrId>
+      <frontOfficePortfolioCode>HYB_HK</frontOfficePortfolioCode>
+      <backOfficePortfolioCode codingScheme="newEdge">M580</backOfficePortfolioCode>
+      <bookType>OT_FO_OWNER</bookType>
+    </analyticalStructureInfo>
+  </party>
+  <party id="CT_GSICLD_7023294">
+    <partyId idScheme="RICOS_SC">SC0000004526</partyId>
+    <partyId idScheme="RICOS">0000004962</partyId>
+    <partyId idScheme="RTS">0000013408</partyId>
+    <partyId idScheme="RLC">0000013408</partyId>
+    <partyId idScheme="LEI">W22LROWP2IHZNBB6K528</partyId>
+    <partyId idScheme="COUNTRY_ISO">GBR</partyId>
+    <partyId idScheme="TraianaCode">GOLD SACH INT LDN</partyId>
+    <partyShortName>GSICLD</partyShortName>
+    <partyName>GOLDMAN SACHS INTERNATIONAL</partyName>
+  </party>
+</FpML>

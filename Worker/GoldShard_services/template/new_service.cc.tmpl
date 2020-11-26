@@ -1,0 +1,98 @@
+/* ______      __    _______ __                   __
+  / ____/___  / /___/ / ___// /_  ____ __________/ /
+ / / __/ __ \/ / __  /\__ \/ __ \/ __ `/ ___/ __  /
+/ /_/ / /_/ / / /_/ /___/ / / / / /_/ / /  / /_/ / 
+\____/\____/_/\__,_//____/_/ /_/\__,_/_/   \__,_/  
+Developed by GoldShard 2020                       */
+#include "service.h"
+#include "libfinance.h"
+#include "##NAME##.h"
+
+using std::string;
+using std::vector;
+using std::shared_ptr;
+using boost::property_tree::ptree;
+using boost::property_tree::ptree_error;
+
+using namespace std;
+
+
+class ##NAME## : public Service 
+{
+    string asof;
+    string timestamp;
+public:
+    int  run( std::string xml_file)  override ;
+    int  run( void * ptr_trade)  override ;
+    void setArgs( const std::string &arg_name, const std::string & value) override ;
+
+};
+
+extern "C" 
+{
+    Service * create() {  return new ##NAME## ; }
+}
+
+//---------------------------------------------------------------------------------------
+void  ##NAME## :: setArgs( const std::string &arg_name, const std::string & value) 
+{
+    clog<< "[INFO]:["<<__FILE__<<":"<<__LINE__<<"] setArgs:"<<arg_name<<"="<<value << endl;  
+    if(arg_name=="ASOF")asof=value;
+}
+
+int ##NAME## :: run( std::string xml_file)  
+{   
+    clog <<"[INFO]: -------------------------------------------------------------------------------------------"<< endl;
+    clog <<"[INFO]: ---------------------------- $"<<__FILE__<<" ----------------------------------------"<< endl;
+    clog <<"[INFO]: -------------------------------------------------------------------------------------------"<< endl;
+    try
+    {
+        clog << "[INFO]:["<<__FILE__<<":"<<__func__<<":"<<__LINE__<<"] open XML:"<<xml_file<< endl;  
+ 
+        Trade * t;
+        if(  (t=factory_trade(xml_file)) == NULL)return 1; 
+        else  return run (t);
+    
+    }
+    catch(boost::property_tree::xml_parser::xml_parser_error &x)
+    {
+        clog<<"[ERROR]:["<<__FILE__<<":"<<__func__<<":"<<__LINE__<<"] catch exception in service "<<x.what()<< endl;
+    }
+
+    catch(const ptree_error &e)
+    {
+        clog<<"[ERROR]:["<<__FILE__<<":"<<__func__<<":"<<__LINE__<<"] catch exception in service :"<<xml_file<<":"<<e.what()<< endl;
+    }
+
+    catch(...)
+    {
+        clog<<"[ERROR]:["<<__FILE__<<":"<<__func__<<":"<<__LINE__<<"] catch exception in service "<<xml_file<< endl;
+    }
+    return 1;
+}
+
+int ##NAME##  :: run( void * ptr_trade) 
+{
+    try
+    {
+    clog << "[INFO]:["<<__FILE__<<":"<<__LINE__<<"] run in $asof:"<<asof<< endl; 
+    timestamp=	GStools::StringTokenizer("%Y-%m-%d:%T"); 
+    clog << "[INFO]:["<<__FILE__<<":"<<__LINE__<<"] execution $timestamp:"<<timestamp<< endl; 
+    string s=((Trade*)ptr_trade)->getXML_filename();  
+    cout << s << endl;
+    return 0;
+
+    }
+    catch(const ptree_error &e)
+    {
+        clog<<"[ERROR]:["<<__FILE__<<":"<<__func__<<":"<<__LINE__<<"] catch exception in service :"<<((Trade*)ptr_trade)->getXML_filename()<<e.what()<< endl;
+    }
+
+    catch(...)
+    {
+        clog<<"[ERROR]:["<<__FILE__<<":"<<__func__<<":"<<__LINE__<<"] catch exception in service:"<<((Trade*)ptr_trade)->getXML_filename()<< endl;
+    }
+    return 1;
+}
+
+

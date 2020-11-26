@@ -1,0 +1,18 @@
+[
+    {
+        "type": "Group",
+        "name": "elasticsearch",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "LiI6GoNKyzmxdOgW"
+    },
+    {
+        "type": "File",
+        "name": "/home/azer/Desktop/ProjetCaCIB/POC_Cacib/Elasticsearch/util.js",
+        "parent_id": "LiI6GoNKyzmxdOgW",
+        "workspaceRoot": "/home/azer/Desktop/ProjetCaCIB/POC_Cacib",
+        "workspacePath": "Elasticsearch/util.js",
+        "id": "UBjb4uYItsvnpmGP"
+    }
+]

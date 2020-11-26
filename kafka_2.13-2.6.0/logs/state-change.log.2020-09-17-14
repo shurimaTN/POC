@@ -1,0 +1,3 @@
+[2020-09-17 14:29:43,907] INFO [Controller id=0 epoch=2] Sending UpdateMetadata request to brokers HashSet(0) for 0 partitions (state.change.logger)
+[2020-09-17 14:29:48,882] INFO [Controller id=0 epoch=2] Sending UpdateMetadata request to brokers HashSet() for 0 partitions (state.change.logger)
+[2020-09-17 14:30:08,709] INFO [Controller id=0 epoch=3] Sending UpdateMetadata request to brokers HashSet(0) for 0 partitions (state.change.logger)

@@ -1,0 +1,4 @@
+{
+    "LOGS_MAPPING":{"Tag":{"type":"text"},"Source":{"type":"text"},"Description":{"type":"text"},"Log": {"type":"text"},"Timestamp": {"type":"text"}},
+    "WhoAMI":"127.0.0.1"
+}
